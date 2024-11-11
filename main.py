@@ -1,4 +1,4 @@
-# from ...
+from predict import AudioPredictor
 
 if __name__ == "__main__":
     # Model config
@@ -9,4 +9,4 @@ if __name__ == "__main__":
     audio_path = 'Test/1. Bronchiectasis/116_1b2_Pl_sc_Meditron.wav'
     result = predictor.predict_audio(audio_path)
     
-    print("{audio_label}")
+    print(f"This model predicts the audio as: {audio_result['audio_label']} with prediction scores: {audio_result['prediction_score']}")
